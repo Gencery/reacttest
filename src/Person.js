@@ -1,12 +1,10 @@
-export default function Person(props) {
+export default function Person({ name, profession, accomplishment, imageId, isGood }) {
   return (
     <div>
-      <p>Hello</p>
-      <span>{props.id}</span>
-      <span>{props.name}</span>
-      <span>{props.proffession}</span>
-      <span>{props.accomplishment}</span>
-      <span>{props.imageId}</span>
-    </div>
+      <p>{name}</p>
+      <p>{profession} {isGood ? "Good" : null}</p>
+      <p>{accomplishment}</p>
+      <p>{imageId}</p>
+    </div >
   )
 }
