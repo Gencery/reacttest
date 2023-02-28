@@ -1,6 +1,6 @@
 import './App.css';
 import Logo from './Logo.js';
-import { people } from './data.js';
+import People from './People';
 
 export default function App() {
 
@@ -10,6 +10,7 @@ export default function App() {
       <span className='container'>
         <span>Hello World!</span>
       </span>
+      <People />
     </div>
   );
 }
