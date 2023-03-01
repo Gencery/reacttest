@@ -1,16 +1,23 @@
+import { useState } from 'react';
 import './App.css';
 import Logo from './Logo.js';
-import People from './People';
+import SearchBar from './SearchBar';
 
 export default function App() {
 
+  const [SearchBarResult, useSearchBarResult] = useState("");
+
   return (
     <div className='App'>
+
       <Logo logoUrl={"https://intranet.izbb.net/Assets/img/anasayfaProjelerSlider/dijitalKitap2.png"} />
+
       <span className='container'>
-        <span>Hello World!</span>
+        <span>{(SearchBarResult === "") ? "-" : SearchBarResult}</span>
       </span>
-      <People />
+
+      <SearchBar handleSearch={useSearchBarResult} />
+
     </div>
   );
 }
