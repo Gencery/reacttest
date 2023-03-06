@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Logo from './Logo.js';
 import SearchBar from './SearchBar';
+import Test from './Test';
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
 
       <SearchBar handleSearch={setSearchBarResult} />
 
+      <Test />
     </div>
 
   );
